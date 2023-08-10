@@ -26,8 +26,8 @@ nav a {
   color: black;
 }
 main {
-  width: 133vh;
-  height: 80vh;
+  width: 80vw;
+  height: 50vw;
   margin: auto;
   background-image: url(https://picsum.photos/800/500);
   background-size: cover;
@@ -72,4 +72,49 @@ footer a {
 }
 .spacer {
   height: 3vw;
+}
+/*
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem 1.25%;
+}
+*/
+@media screen and (max-width: 500px) {
+  header {
+    flex-direction: column;
+  }
+  nav {
+    flex-direction: column;
+  }
+  main {
+    width: 90vw;
+    height: 56vw;
+    margin-top: 3%;
+  }
+  section {
+    justify-content: space-evenly;
+  }
+  section div {
+    width: 45vw;
+  }
+  header h2 {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+  nav {
+    flex-direction: column;
+  }
+  header h2 {
+    padding-left: 0;
+  }
+  main {
+    width: 90vw;
+    height: 56vw;
+    margin-top: 3%;
+  }
 }
